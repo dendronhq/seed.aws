@@ -1,0 +1,45 @@
+version: 1
+imports: []
+schemas:
+  - id: aws
+    children: 
+      - service
+    title: aws
+    parent: root
+  - id: service
+    pattern: s
+    namespace: true
+    children:
+    - quickstart
+    - api
+    - sdk
+    - integrations
+    - obs
+    - sec
+    - scale
+    - deploy
+    - variant
+  - id: quickstart
+  - id: api
+  - id: sdk
+  - id: integrations
+  - id: obs
+    title: observability
+  - id: sec
+    title: security
+  - id: reliability
+  - id: scale
+    title: scalability
+  - id: deploy
+  - id: variant
+    pattern: v
+    namespace: true
+    children:
+    - quickstart
+    - api
+    - sdk
+    - integrations
+    - obs
+    - sec
+    - scale
+    - deploy
